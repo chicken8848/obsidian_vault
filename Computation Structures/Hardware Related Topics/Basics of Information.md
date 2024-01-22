@@ -43,4 +43,17 @@ We can create a map given encoded information, to manipulate for ourselves and o
 
 8 bits = 1 byte
 
-# Information and uncertainty
+## Variable Length Encoding
+Use shorter bits to represent high probability choices
+Longer bits for less probable choices
+
+| choices | $p_i$ | encoding |
+| :--: | :--: | :--: |
+| "A" | $\frac{1}{3}$ | 11 |
+| "B" | $\frac{1}{2}$ | 0 |
+| "C" | $\frac{1}{12}$ | 100 |
+| "D" | $\frac{1}{12}$ | 101 |
+
+To get a more efficient encoding we need to encode sequence of choices, not just each choice individually.
+
+This is the key to data compression.
