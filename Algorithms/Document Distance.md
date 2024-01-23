@@ -22,7 +22,7 @@ $$
 &= 4
 \end{align}
 $$
-We then need to normalize it,
+We then need to normalise it,
 $$
 \begin{gather}
 || D || = \sqrt{\sum_w D(w)^2} \\
@@ -33,7 +33,7 @@ $$
 \end{gather}
 $$
 Therefore, in general, for vector space model,
-First normalize,
+First normalise,
 $$
 \frac{D_1 \circ D_2}{||D_1|| \cdot ||D_2||}
 $$

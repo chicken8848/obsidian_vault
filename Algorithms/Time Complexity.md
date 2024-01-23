@@ -20,6 +20,6 @@ Grows asymptotically to $\geq$
 $$n^{999} = \Omega(1)$$
 Example:
 $$ 2n^{9999} + 100n^{33}  + 5 = \Omega(n^2) $$
-A more precise definiton:
+A more precise definition:
 $$ f(n) = \Omega (g(n)) \Leftrightarrow \exists k > 0, n_0 \text{ such that } |f(n)| \geq k|g(n)| \text{ for some } n \geq 0$$
 $k$ is called a witness

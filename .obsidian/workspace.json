@@ -18,105 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ebef324a0f7c7101",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Course Links.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8571fa40a3a7d330",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/Basics of Information.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a914dea0809ddfd4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/Basics of Information.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d08b1c16d9271681",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/Basics of Information.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8fcb36520fcaf6ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Time Complexity.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3b08a37bba306ea8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Proofs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "43c1090ebf082b96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Document Distance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6c62ec2e631491d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Proofs.md",
+                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Proofs.md",
+                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Proofs.md"
+                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md"
               }
             }
           },
@@ -261,15 +164,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3b08a37bba306ea8",
+  "active": "52060dd614fe4233",
   "lastOpenFiles": [
     "Algorithms/Time Complexity.md",
+    "Algorithms/Python Specific Implementation.md",
     "Algorithms/Proofs.md",
+    "Algorithms/Document Distance.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134803.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134629.png",
-    "Algorithms/Document Distance.md",
-    "Algorithms/Python Specific Implementation.md",
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug.ipynb",
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug-checkpoint.ipynb",
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug",
