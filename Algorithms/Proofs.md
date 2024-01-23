@@ -68,16 +68,33 @@ c_1 \cdot n^2 \leq \frac{n^2}{2} - 3 \cdot n \leq c_2 \cdot n^2
 $$
 $$
 \begin{gather}
-\forall n \geq 7 \\
-c_1 = \frac{1}{50} \\
-c_2 = 1
+0 \leq \frac{n^2}{2} - 3 \cdot n \leq n^2 , \forall n \geq 6 \\
+\frac{n^2}{2} - 3 \cdot n \geq c_2 \times n \geq 0 \\
 \end{gather}
 $$
+Find $c_2, n$
 
-Prove that $6 \times n^3 \neq \Theta (n^2)$
+Prove that $6 \times n^3 \neq \Theta (n^2)$,
+We attempt a proof by contradiction,
+Let us assume that,
 $$
-6 \times n^3 \geq n^3 
+\begin{gather}
+6 \times n^3 = \Theta (n^2) \\
+\Leftrightarrow \exists c_1,c_2 > 0, \forall n > n_0
+\end{gather}
 $$
+Such that,
+$$
+0 \leq c_1 n^2 \leq 6n^3 \leq c_2n^2 \\
+$$
+We notice that,
+$$
+\begin{gather}
+6n \leq c_2, \forall n \leq \frac{c_2}{6} \\
+\Rightarrow 6n \nleq c_2, \forall n > \frac{c_2}{6}
+\end{gather}
+$$
+Hence, $6 \times n^3 \neq \Theta (n^2)$, as the inequality does not hold.
 
 Prove that $\sum_1^n \frac{1}{k} = \Theta(\int_1^n \frac{1}{x} dx)$
 $$
