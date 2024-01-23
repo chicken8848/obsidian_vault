@@ -73,7 +73,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
+                "file": "Algorithms/Time Complexity.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b08a37bba306ea8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Proofs.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
+                "file": "Algorithms/Proofs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
+                "file": "Algorithms/Proofs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Digital Abstraction.md"
+                "file": "Algorithms/Proofs.md"
               }
             }
           },
@@ -249,12 +261,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "27011d458a4f12df",
+  "active": "3b08a37bba306ea8",
   "lastOpenFiles": [
+    "Algorithms/Time Complexity.md",
+    "Algorithms/Proofs.md",
+    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134803.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134629.png",
     "Algorithms/Document Distance.md",
-    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Algorithms/Python Specific Implementation.md",
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug.ipynb",
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug-checkpoint.ipynb",
@@ -271,7 +285,6 @@
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240121003922.png",
     "Useful Links.md",
-    "Algorithms/Time Complexity.md",
     "README.md",
     "Computation Structures/Course Links.md",
     "Computation Structures/Untitled.md",
