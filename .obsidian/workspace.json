@@ -66,8 +66,36 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8fcb36520fcaf6ca",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "43c1090ebf082b96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Python Specific Implementation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -96,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#optimization",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +141,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -133,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "file": "Algorithms/Python Specific Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "file": "Algorithms/Python Specific Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md"
+                "file": "Algorithms/Python Specific Implementation.md"
               }
             }
           },
@@ -212,11 +241,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "866351248ff80195",
+  "active": "33f4b84b7e3a09b5",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Algorithms/Python Specific Implementation.md",
+    "Algorithms/Document Distance.md",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240121003922.png",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Useful Links.md",
     "Algorithms/Time Complexity.md",
     "Info Sys",
@@ -228,7 +260,6 @@
     "Computation Structures/Untitled.md",
     "Computation Structures",
     "2024-01-13.md",
-    "Untitled.canvas",
     "2023-12-14.md",
     "Untitled 1.md"
   ]
