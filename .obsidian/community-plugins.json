@@ -8,5 +8,6 @@
   "obsidian-annotator",
   "cm-editor-syntax-highlight-obsidian",
   "better-word-count",
-  "execute-code"
+  "execute-code",
+  "obsidian-pandoc"
 ]

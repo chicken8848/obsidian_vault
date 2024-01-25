@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "file": "Computation Structures/Course Links.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0884693fae55df8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Algo Homework/Homework Set 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "file": "Algorithms/Algo Homework/Homework Set 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "file": "Algorithms/Algo Homework/Homework Set 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md"
+                "file": "Algorithms/Algo Homework/Homework Set 1.md"
               }
             }
           },
@@ -164,12 +177,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "52060dd614fe4233",
+  "active": "0884693fae55df8a",
   "lastOpenFiles": [
+    "Algorithms/Proofs.md",
     "Algorithms/Time Complexity.md",
     "Algorithms/Python Specific Implementation.md",
-    "Algorithms/Proofs.md",
+    "Algorithms/Algo Homework/Homework Set 1.md",
+    "Games Of Histories/Week 1.md",
+    "Algorithms/Algo Homework/Homework Set 1.pdf",
+    "templates/latexmathtemplates/gathermath.md",
+    "README.md",
+    "templates/latexmathtemplates/gathemath.md",
+    "templates/latexmathtemplates",
+    "templates",
+    "Algorithms/Algo Homework",
+    "Computation Structures/Course Links.md",
+    "Games Of Histories",
     "Algorithms/Document Distance.md",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134803.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240123134629.png",
@@ -178,18 +203,10 @@
     "Algorithms/AlgorithmCourse_distance_sample_code/jupiter_debug",
     "Algorithms/AlgorithmCourse_distance_sample_code/file5.txt",
     "Algorithms/AlgorithmCourse_distance_sample_code/file4.txt",
-    "Algorithms/AlgorithmCourse_distance_sample_code/file3.txt",
-    "Algorithms/AlgorithmCourse_distance_sample_code/file2.txt",
-    "Algorithms/AlgorithmCourse_distance_sample_code/file1.txt",
-    "Algorithms/AlgorithmCourse_distance_sample_code/docdist8.py",
-    "Algorithms/AlgorithmCourse_distance_sample_code/docdist7.py",
     "Untitled.canvas",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240121003922.png",
     "Useful Links.md",
-    "README.md",
-    "Computation Structures/Course Links.md",
     "Computation Structures/Untitled.md",
     "2024-01-13.md",
     "2023-12-14.md",
