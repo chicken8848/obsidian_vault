@@ -191,6 +191,38 @@ f(n) = \Theta(g(n)) \Leftrightarrow g(n) = \Theta(f(n))
 $$
 
 ## Part (ii)
+Show that 
+$$
+(d \times f(n) + a)^b = \Theta (f(n)^b))
+$$
+$\forall n \geq 1, f(n) = \Omega(n), \forall a \in \mathbb{R}, d > 0, b \in \mathbb{Z}^+$,
+$$
+\begin{gather}
+(d \times f(n) + a)^b = (df(n))^b + \binom{b}{1}(df(n))^{b-1}a^1 + \cdots + a^b \\
+\geq (f(n))^b \\\Rightarrow (d \times f(n) + a)^b = \Omega(f(n)^b), \forall n \geq 1 \\\\
+
+(d \times f(n) + a)^b = (df(n))^b + \binom{b}{1}(df(n))^{b-1}a^1 + \cdots + a^b \\
+\leq x\sum_{i=0}^{b}((df(n)^b)) \\
+= xbd^bf(n)^b \\
+= bkf(n)^b, \text{ where } k = xd^b, k > a^b \\
+\Rightarrow (d \times f(n) + a)^b = O(f(n)^b), \forall n \geq 1
+\end{gather}
+$$
+Therefore,
+$$
+\begin{gather}
+(d \times f(n) + a)^b = \Omega(f(n)^b) \wedge (d \times f(n) + a)^b = O(f(n)^b), \forall n \geq 1 \\
+\Rightarrow (d \times f(n) + a)^b = \Theta(f(n)^b)
+\end{gather}
+$$
+# Question 4
+## (i) $f(x) = \Theta(n!)$
+## (ii)  $f(x) = \Theta(logn)$
+## (iii) $f(x) = \Theta(n\sqrt{n})$
+## (iv) $f(x) = \Theta(nlogn)$
+## (v) $f(x) = \Theta(logn)$
+
+
 
 
 
