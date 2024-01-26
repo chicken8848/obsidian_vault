@@ -1,6 +1,13 @@
 # Question 1
 - Find biggest $A$ that can be processed in $T$ seconds.
 - Algorithm can process array of size $a$ in $t$ seconds.
+Since $f(n) \propto T$,
+$$
+\begin{gather}
+\frac{A}{a} = \frac{T}{t}  \\
+A = \frac{aT}{t}
+\end{gather}
+$$
 ## $f(n) = logn$
 $$
 \begin{gather}
