@@ -1,39 +1,44 @@
+1006954 Joshua John Lee Shi Kai
 # Question 1
-- Find biggest $A$ that can be processed in $T$ seconds.
-- Algorithm can process array of size $a$ in $t$ seconds.
-Since $f(n) \propto T$,
-$$
-\begin{gather}
-\frac{A}{a} = \frac{T}{t}  \\
-A = \frac{aT}{t}
-\end{gather}
-$$
 ## $f(n) = logn$
 $$
 \begin{gather}
+klog a = t\\
+k = \frac{t}{loga} \\
 f(n) \leq T \\
-logn \leq T \\
-n \leq e^T \\
-\Rightarrow A = e^T
+\frac{tlogA}{loga} \leq T \\
+logA = \frac{Tloga}{t} \\
+logA = loga^{T/t} \\
+\Rightarrow A = \lfloor a^{\frac{T}{t}} \rfloor \\
 \end{gather}
 $$
 ## $f(n) = n^m$
 $$
 \begin{gather}
+ka^m = t \\
+k = \frac{t}{a^m} \\
+
 f(n) \leq T \\
-n^m \leq T \\
-n \leq \sqrt[m]{T} \\
-\Rightarrow A = \sqrt[m]{T}
+kA^m \leq T \\
+n \leq \sqrt[m]{T/k} \\
+n \leq \sqrt[m]{\frac{a^m\cdot T}{t}} \\
+\Rightarrow A = \lfloor a\cdot\sqrt[m]{T} \rfloor
 \end{gather}
 $$
 ## $f(n) = m^n$
 $$
 \begin{gather}
+km^a = t \\
+k = \frac{t}{m^a} \\
+
 f(n) \leq T \\
-n log m \leq log T \\
-n \leq \frac{logT}{logm} \\
-n \leq log_mT \\
-\Rightarrow A = log_mT
+km^A \leq T \\
+m^A \leq \frac{T}{k} \\
+Alogm \leq log\frac{T}{k} \\
+A \leq \frac{logT/k}{logm} \\
+A \leq log_m\frac{T}{k} \\
+A = log_m\frac{Tm^a}{t} \\
+\Rightarrow A = \lfloor log_m\frac{T}{t} + a \rfloor
 \end{gather}
 $$
 
@@ -83,8 +88,8 @@ $$
 We first show that $f(n) = O(nlogn)$,
 $$
 \begin{gather}
-5nlog3 + 3nlog5 + 2nloge + 8nlogn \\ \leq 5nlog3 + 5nlog5 + 5nloge = 15nlog15e \\
-\leq 15nlog15n \leq 15nlogn^4 = 45nlogn, \forall n \geq e \\
+5nlog3 + 3nlog5 + 2nloge + 8nlogn \\ \leq 8nlog3 + 8nlog5 + 8nloge + 8nlogn= 32nlog15ne \\
+\leq 32nlog15ne \leq 32nlogn^6 = 192nlogn, \forall n \geq e \\
 \Rightarrow f(n) = O(nlogn)
 \end{gather}
 $$
