@@ -214,8 +214,8 @@ $$
 \geq (f(n))^b \\\Rightarrow (d \times f(n) + a)^b = \Omega(f(n)^b), \forall n \geq 1 \\\\
 
 (d \times f(n) + a)^b = (df(n))^b + \binom{b}{1}(df(n))^{b-1}a^1 + \cdots + a^b \\
-\leq x\sum_{i=0}^{b}((df(n)^b)) \\
-= xbd^bf(n)^b \\
+\leq x\sum_{i=0}^{b}((df(n)^b)), \forall x > 1  \\
+= xbd^bf(n)^b\\
 = bkf(n)^b, \text{ where } k = xd^b, k > a^b \\
 \Rightarrow (d \times f(n) + a)^b = O(f(n)^b), \forall n \geq 1
 \end{gather}
