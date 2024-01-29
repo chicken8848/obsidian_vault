@@ -22,7 +22,7 @@ f(n) \leq T \\
 kA^m \leq T \\
 n \leq \sqrt[m]{T/k} \\
 n \leq \sqrt[m]{\frac{a^m\cdot T}{t}} \\
-\Rightarrow A = \lfloor a\cdot\sqrt[m]{T} \rfloor
+\Rightarrow A = \lfloor a\cdot\sqrt[m]{T/t} \rfloor
 \end{gather}
 $$
 ## $f(n) = m^n$
@@ -88,8 +88,8 @@ $$
 We first show that $f(n) = O(nlogn)$,
 $$
 \begin{gather}
-5nlog3 + 3nlog5 + 2nloge + 8nlogn \\ \leq 8nlog3 + 8nlog5 + 8nloge + 8nlogn= 32nlog15ne \\
-\leq 32nlog15ne \leq 32nlogn^6 = 192nlogn, \forall n \geq e \\
+5nlog3 + 3nlog5 + 2nloge + 8nlogn \\ \leq 8nlog3 + 8nlog5 + 8nloge + 8nlogn= 8nlog15ne \\
+\leq 8nlog15ne \leq 8nlogn^4 = 32nlogn, \forall n \geq e \\
 \Rightarrow f(n) = O(nlogn)
 \end{gather}
 $$
