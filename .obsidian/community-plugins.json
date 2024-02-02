@@ -9,5 +9,9 @@
   "cm-editor-syntax-highlight-obsidian",
   "better-word-count",
   "execute-code",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "obsidian-latex-suite",
+  "omnisearch",
+  "obsidian-minimal-settings",
+  "url-into-selection"
 ]

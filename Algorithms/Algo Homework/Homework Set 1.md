@@ -89,7 +89,7 @@ We first show that $f(n) = O(nlogn)$,
 $$
 \begin{gather}
 5nlog3 + 3nlog5 + 2nloge + 8nlogn \\ \leq 8nlog3 + 8nlog5 + 8nloge + 8nlogn= 8nlog15ne \\
-\leq 8nlog15ne \leq 8nlogn^4 = 32nlogn, \forall n \geq e \\
+\leq 8nlog15ne \leq 8nlogn^5 = 40nlogn, \forall n \geq e \\
 \Rightarrow f(n) = O(nlogn)
 \end{gather}
 $$
@@ -106,7 +106,7 @@ Therefore,
 $$
 \begin{gather}
 f(n) = \Omega(nlogn) \wedge f(n) = O(nlogn) \\
-\Rightarrow 0 \leq nlogn \leq f(n) \leq 45nlogn, \forall n \geq e\\
+\Rightarrow 0 \leq nlogn \leq f(n) \leq 40nlogn, \forall n \geq e\\
 \Rightarrow f(n) = \Theta(nlogn)
 \end{gather}
 $$
@@ -228,8 +228,8 @@ $$
 \end{gather}
 $$
 # Question 4
-## (i) $f(x) = \Theta(n!)$
-## (ii)  $f(x) = \Theta(logn)$
+## (i) $f(x) = \Theta(2^{2n})$
+## (ii)  $f(x) = \Theta(slog n)$
 ## (iii) $f(x) = \Theta(n\sqrt{n})$
 ## (iv) $f(x) = \Theta(nlogn)$
 ## (v) $f(x) = \Theta(logn)$

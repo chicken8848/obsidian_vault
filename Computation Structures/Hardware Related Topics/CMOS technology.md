@@ -4,7 +4,7 @@
 - It has 4 terminals. Input is supplied at the gate, output is obtained at the drain
 - The current flow between source and drain $I_{DS} \propto \frac{W}{L}$ (The width and length of the MOSFET)
 - Source and drain is physically symmetrical, we name them depending on the type of the MOSFET
-## NFET
+## NFET 
 The majority of the charge carrier for the bulk are holes. The majority charge carrier for the source and drain are electrons. Typically, the bulk is connected to GND to keep the PN junction reverse biased.
 
 ### How NFET Operates

@@ -79,8 +79,17 @@ T(n) &= cnlogn > 1 \\
 \Rightarrow n_0 &> 1
 \end{align}
 $$
-
-
+# Some considerations
+There are a few cases to consider
+- Each level's value is the same
+	- $f(n) * log_b n$
+	- Total value = $\Theta$(number of levels x sum of each level)
+- Each level's value is decreasing 
+	- $f(n)$
+	- total value = $\Theta$(root node's value)
+- Each level's value is increasing 
+	- $n^{log_b a}$
+	- total value = $\Theta$(number of leaves)
 
 
 
