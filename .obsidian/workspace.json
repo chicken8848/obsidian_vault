@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Algorithms/Master's Theorem.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Algorithms/Master's Theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Algorithms/Master's Theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md"
+                "file": "Algorithms/Master's Theorem.md"
               }
             }
           },
@@ -204,8 +204,8 @@
   },
   "active": "c4efdfa788683c1b",
   "lastOpenFiles": [
-    "Algorithms/Master's Theorem.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
+    "Algorithms/Master's Theorem.md",
     "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Document Distance.md",
     "Algorithms/Algo Homework/Bonus Set 1.md",

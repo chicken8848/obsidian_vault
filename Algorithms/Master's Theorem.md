@@ -18,7 +18,7 @@ L = \text{ number of leaves } = a^h = a^{\log_{b}^n} = n^{\log_{b}{a}}\\
 \end{gather}
 
 $$
-Let $\varepsilon > 0$,
+Let constant $\varepsilon > 0$,
 if value of $f(n)$ is increasing geometrically down the tree,
 $$
 \begin{gather}
