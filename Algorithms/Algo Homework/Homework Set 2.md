@@ -1,4 +1,4 @@
-f_Joshua John Lee Shi Kai 1006954
+Joshua John Lee Shi Kai 1006954
 # Question 1
 ## Part i
 $$
@@ -128,12 +128,11 @@ function tetration(a,n)
 	Require: n > 0, n in Z
 	return EXPONENTIAL(a,EXPONENTIAL(n,n))
 ```
-Using Master's Theorem,
 $$
 \begin{gather}
 T(n) = f(f(n)) =( f \circ f ) (n) \\
 \Theta ( f \circ f ) (n) = \Theta(f(n)) \cdot \Theta(f(n)) \\
-\Rightarrow T(n) = \log n \cdot \log n = (\log n )^2
+\Rightarrow T(n) = \Theta(\log n \cdot \log n )= \Theta(\log n )^2
 \end{gather}
 $$
 # Question 4
