@@ -66,30 +66,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c20d9eeea6a82597",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4a091c296b736f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/CMOS technology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 4
