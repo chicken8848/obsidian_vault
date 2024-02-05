@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2c87c7f92aabe6fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md"
+                "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md"
               }
             }
           },
@@ -202,10 +214,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c4efdfa788683c1b",
+  "active": "2c87c7f92aabe6fd",
   "lastOpenFiles": [
-    "Algorithms/Master's Theorem.md",
+    "Computation Structures/Computation Structures Photos/Pasted image 20240205111903.png",
+    "Computation Structures/Computation Structures Photos/Pasted image 20240205111207.png",
+    "Computation Structures/Computation Structures Photos/Pasted image 20240205105609.png",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
+    "Algorithms/Master's Theorem.md",
     "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Document Distance.md",
@@ -223,9 +240,7 @@
     "Algorithms/Divide and Conquer.md",
     "Computation Structures/ProblemSets/Logic Synthesis Pset.md",
     "Computation Structures/ProblemSets/CompStructPsetAsset/Pasted image 20240130135414.png",
-    "Computation Structures/ProblemSets/CompStructPsetAsset/Pasted image 20240130133943.png",
     "Computation Structures/ProblemSets/CompStructPsetAsset",
-    "Pasted image 20240130133943 1.png",
     "Computation Structures/ProblemSets",
     "Algorithms/Algo Homework/Homework Set 1.synctex(busy)",
     "Algorithms/Algo Homework/pdflatex47944.fls",
@@ -240,7 +255,6 @@
     "templates/latexmathtemplates/gathermath.md",
     "README.md",
     "templates/latexmathtemplates/gathemath.md",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Untitled.canvas",
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
