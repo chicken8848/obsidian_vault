@@ -3,16 +3,17 @@ Joshua John Lee Shi Kai 1006954
 ## Part i
 $$
 \begin{gather}
-T(n) = 1024T(\frac{n}{2})+2^n \\
+T(n) = 1024T\left( \frac{n}{2} \right)+2^n \\
 n^{\log_2 1024} = n^{10} \\
 f(n) = 2^n \\
+f(n) = \Omega(n^{10}) \\
+1024 f\left( \frac{n}{2} \right) = 1024 \cdot 2^{n/2} = 2^{n/2 + 10} \\
+2^{n/2 + 10} \leq c\cdot 2^n \\
+c \geq 2^{10-n/2} \\
+\Rightarrow c < 1, \forall n > 20 \\
+\Rightarrow T(n) = \Theta(2^n)
 \end{gather}
 $$
-Comparing the powers of $n^{10}$ and $2^n$, we realise that there does not exist a constant $\varepsilon > 0$ such that 
-$$
-10 + \varepsilon = n
-$$
-As such we are unable to use master's theorem
 ## Part ii
 $$
 \begin{gather}
