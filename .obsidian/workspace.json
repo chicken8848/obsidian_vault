@@ -49,6 +49,40 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Algorithms/Algo Homework/Homework Set 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0bffd2f28391a02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Heap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a53abbb707e3b430",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Computation Structures/Computation Structures Photos/Pasted image 20240206131611.png"
+              }
+            }
+          },
+          {
+            "id": "672b6d054aa635a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md",
                 "mode": "source",
                 "source": false
@@ -68,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -214,14 +248,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "2c87c7f92aabe6fd",
+  "active": "672b6d054aa635a0",
   "lastOpenFiles": [
+    "Computation Structures/Hardware Related Topics/Finite State Machine.md",
+    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
+    "Computation Structures/Hardware Related Topics/CMOS technology.md",
+    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+    "Computation Structures/Computation Structures Photos/Pasted image 20240206131625.png",
+    "Computation Structures/Computation Structures Photos/Pasted image 20240206131611.png",
+    "Algorithms/Heap.md",
+    "Algorithms/Algo Homework/Homework Set 2.md",
     "Computation Structures/Computation Structures Photos/Pasted image 20240205111903.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240205111207.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240205105609.png",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
-    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
-    "Algorithms/Algo Homework/Homework Set 2.md",
     "Algorithms/Master's Theorem.md",
     "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 1.md",
@@ -232,14 +272,11 @@
     "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:15:18,546564510+08:00.png",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:16:47,899952505+08:00.png",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:18:18,578883275+08:00.png",
-    "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:09:55,588944871+08:00.png",
-    "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:18:16,334696185+08:00.png",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
     "Algorithms/Algo Homework/Pictures",
     "Algorithms/Divide and Conquer.md",
     "Computation Structures/ProblemSets/Logic Synthesis Pset.md",
-    "Computation Structures/ProblemSets/CompStructPsetAsset/Pasted image 20240130135414.png",
     "Computation Structures/ProblemSets/CompStructPsetAsset",
     "Computation Structures/ProblemSets",
     "Algorithms/Algo Homework/Homework Set 1.synctex(busy)",
@@ -247,7 +284,6 @@
     "Algorithms/Algo Homework/Homework Set 1.synctex.gz",
     "Algorithms/Algo Homework/Homework Set 1.pdf",
     "Algorithms/Algo Homework/Homework Set 1.log",
-    "Computation Structures/Hardware Related Topics/CMOS technology.md",
     "Computation Structures/Course Links.md",
     "Algorithms/Python Specific Implementation.md",
     "Algorithms/Proofs.md",
@@ -255,12 +291,10 @@
     "templates/latexmathtemplates/gathermath.md",
     "README.md",
     "templates/latexmathtemplates/gathemath.md",
-    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Untitled.canvas",
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
     "Useful Links.md",
     "2024-01-13.md",
-    "2023-12-14.md",
-    "Untitled 1.md"
+    "2023-12-14.md"
   ]
 }

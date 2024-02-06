@@ -63,7 +63,14 @@ $$
 Hence, we cannot use master's theorem.
 # Question 2
 ## Part i
-`SORTIT(A)` works on the basis that any `A[i]` to the left of ```A[count]```, where $i < \text{count}$, is already sorted. It only needs to insert `A[count]` into a sorted subset of `A` by comparing `A[count]` with `A[count - 1]`. After which it continues going toward the right of `count` again.
+Initialisation:
+The loop invariant holds before initialization. For count = 2, subarray A[1…count – 1] contains only one element, i.e. A[1]. This is a trivial case of sorting. It proves that the loop invariant is true before the first iteration.
+
+Maintenance:
+In each iteration, the algorithm finds if A[count] is less than A[count - 1], then swap the position of A[count] and A[count - 1], subsequently decreasing the count. If the algorithm finds that A[count] is more than A[count - 1], it increments the count. After reaching a new highest count,  A[1…count] contains elements the same as in A[1…count] before the loop, but now they will be in sorted order. Thus the invariant is held in attendance too.
+
+Termination:
+The loop terminates when count = n. Each new highest count ensures that A[1...count] is sorted, so after reaching n, all elements will be in their right position. After the loop, A[1…n] contains elements the same as in A[1…n] before the loop, but now they will be in sorted order.
 
 ## Part ii
 ```
