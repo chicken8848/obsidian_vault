@@ -102,6 +102,18 @@
             }
           },
           {
+            "id": "3cc3e4d877e38a49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Binary Search Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "57392303974988b8",
             "type": "leaf",
             "state": {
@@ -114,7 +126,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -180,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Algo Homework/Bonus Set 2.md",
+                "file": "Algorithms/Binary Search Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Algo Homework/Bonus Set 2.md",
+                "file": "Algorithms/Binary Search Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Algo Homework/Bonus Set 2.md"
+                "file": "Algorithms/Binary Search Tree.md"
               }
             }
           },
@@ -260,13 +272,16 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "721459c39fa1dbe5",
+  "active": "3cc3e4d877e38a49",
   "lastOpenFiles": [
+    "Algorithms/Algorithm Photos/Pasted image 20240213105106.png",
+    "Algorithms/Binary Search Tree.md",
+    "Algorithms/Algorithm Photos/Pasted image 20240213105049.png",
+    "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-02-07T02:05:05,402735727+08:00.png",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-02-07T02:04:24,585551679+08:00.png",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:09:55,588944871+08:00.png",
-    "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algorithm Photos/2024-02-07T02:04:24,585551679+08:00.png",
     "Algorithms/Algorithm Photos/2024-02-07T02:05:05,402735727+08:00.png",
     "Algorithms/Master's Theorem.md",
@@ -279,8 +294,6 @@
     "Computation Structures/Computation Structures Photos/Pasted image 20240206131625.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240206131611.png",
     "Computation Structures/Computation Structures Photos/Pasted image 20240205111903.png",
-    "Computation Structures/Computation Structures Photos/Pasted image 20240205111207.png",
-    "Computation Structures/Computation Structures Photos/Pasted image 20240205105609.png",
     "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Document Distance.md",
@@ -306,7 +319,6 @@
     "templates/latexmathtemplates/gathemath.md",
     "Untitled.canvas",
     "Computation Structures/Hardware Related Topics/Basics of Information.md",
-    "Useful Links.md",
-    "2024-01-13.md"
+    "Useful Links.md"
   ]
 }
