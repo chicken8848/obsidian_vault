@@ -141,4 +141,7 @@ Consider 3 cases:
 2. x has exactly one child
 	1. if we "promote" the child of x to replace x, the BST property still holds
 3. x has exactly two children
-	1. promote x.right, still maintaining the BST property]b
+	1. find a suitable replacement
+Two cases for case 3:
+1. If x.right has no left child, then we can easily promote x.right to replace x
+2. if x.right has left child, tree_min(x.right) replaces x
