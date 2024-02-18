@@ -8,101 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52060dd614fe4233",
+            "id": "2a1fd84bf6494aa8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computation Structures/Course Links.md",
+                "file": "Algorithms/Algo Homework/Problem Set 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0884693fae55df8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Divide and Conquer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4efdfa788683c1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computation Structures/Hardware Related Topics/Quantifying Information.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2c87c7f92aabe6fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0bffd2f28391a02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Heap.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a53abbb707e3b430",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Computation Structures/Computation Structures Photos/Pasted image 20240206131611.png"
-              }
-            }
-          },
-          {
-            "id": "672b6d054aa635a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Heap.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "721459c39fa1dbe5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Algo Homework/Bonus Set 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3cc3e4d877e38a49",
+            "id": "ab413c320b155892",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -112,21 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "57392303974988b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Master's Theorem.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 235.50260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "983df14591c1a963",
@@ -192,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Binary Search Tree.md",
+                "file": "Algorithms/Algo Homework/Problem Set 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Binary Search Tree.md",
+                "file": "Algorithms/Algo Homework/Problem Set 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Binary Search Tree.md"
+                "file": "Algorithms/Algo Homework/Problem Set 1.md"
               }
             }
           },
@@ -272,10 +178,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3cc3e4d877e38a49",
+  "active": "2a1fd84bf6494aa8",
   "lastOpenFiles": [
-    "Algorithms/Algorithm Photos/Pasted image 20240213105106.png",
+    "Pasted image 20240218155708.png",
+    "Pasted image 20240218155657.png",
     "Algorithms/Binary Search Tree.md",
+    "Algorithms/Algo Homework/Problem Set 1.md",
+    "Algorithms/Heap.md",
+    "Algorithms/Algorithm Photos/Pasted image 20240213172147.png",
+    "Algorithms/Algorithm Photos/Pasted image 20240213172055.png",
+    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+    "Computation Structures/Hardware Related Topics/Finite State Machine.md",
+    "Algorithms/Algorithm Photos/Pasted image 20240213105106.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213105049.png",
     "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
@@ -285,15 +200,8 @@
     "Algorithms/Algorithm Photos/2024-02-07T02:04:24,585551679+08:00.png",
     "Algorithms/Algorithm Photos/2024-02-07T02:05:05,402735727+08:00.png",
     "Algorithms/Master's Theorem.md",
-    "Algorithms/Heap.md",
-    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
-    "Computation Structures/Hardware Related Topics/Finite State Machine.md",
     "Computation Structures/Hardware Related Topics/CMOS technology.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
-    "Computation Structures/Computation Structures Photos/Pasted image 20240206131625.png",
-    "Computation Structures/Computation Structures Photos/Pasted image 20240206131611.png",
-    "Computation Structures/Computation Structures Photos/Pasted image 20240205111903.png",
     "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Document Distance.md",
@@ -318,7 +226,6 @@
     "README.md",
     "templates/latexmathtemplates/gathemath.md",
     "Untitled.canvas",
-    "Computation Structures/Hardware Related Topics/Basics of Information.md",
-    "Useful Links.md"
+    "Computation Structures/Hardware Related Topics/Basics of Information.md"
   ]
 }

@@ -19,3 +19,12 @@ All state transition diagrams can be described by truth tables. Binary encodings
 | 1 | S011 | 010 | SX | 000 | 0 |
 | 0 | S0110 | 100 | S0 | 001 | 1 |
 | 1 | S0110 | 100 | S01 | 011 | 1 |
+# Valid state machines
+Arcs leaving a state must be
+1. mutually exclusive
+2. collectively exhaustive
+## Moore machine
+Outputs only depend on state
+
+## Mealy Machine
+Outputs depend on inputs + state 

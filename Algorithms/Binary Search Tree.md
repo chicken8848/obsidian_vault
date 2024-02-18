@@ -100,7 +100,7 @@ def tree_search(x,k):
 		if k < x.key then:
 			x = x.left
 		else:
-			x = x.left
+			x = x.right
 	return x
 ```
 
@@ -145,3 +145,34 @@ Consider 3 cases:
 Two cases for case 3:
 1. If x.right has no left child, then we can easily promote x.right to replace x
 2. if x.right has left child, tree_min(x.right) replaces x
+```
+def tree_delete(x):
+	if x.left == NULL and x.right == NULL:
+		delete x
+	else if x.left == NULL | x.right == NULL:
+		x = x.left | x.right
+	else:
+		if x.right.left != NULL:
+			x = x.right
+		else:
+			x = tree_min(x.right)
+```
+
+# AVL Trees
+Counting from the leaf, height between left and right child cannot defer by more than 1, as such, then the AVL tree will be balanced.
+
+## Rotations
+All nodes are either
+1. balanced, fulfill the balanced height property
+2. right heavy, x.left.height + 1 < x.right.height
+3. left heavy, x.left.height > x.right.height + 1
+### Left rotate
+![[Pasted image 20240213172147.png]]
+
+### Right rotate
+![[Pasted image 20240213172055.png]]
+Right rotate basically does sort of a "redistribution of weights" rightwards.
+```
+def right_rotate(x):
+	
+```
