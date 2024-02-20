@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ab413c320b155892",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Binary Search Tree.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.50260543823242,
-    "collapsed": true
+    "width": 235.50260543823242
   },
   "right": {
     "id": "983df14591c1a963",
@@ -180,10 +167,15 @@
   },
   "active": "2a1fd84bf6494aa8",
   "lastOpenFiles": [
-    "Pasted image 20240218155708.png",
-    "Pasted image 20240218155657.png",
-    "Algorithms/Binary Search Tree.md",
     "Algorithms/Algo Homework/Problem Set 1.md",
+    "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240221015828.png",
+    "Pasted image 20240221014526.png",
+    "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240221014542.png",
+    "Algorithms/Binary Search Tree.md",
+    "Computation Structures/Hardware Related Topics/Designing an Instruction Set.md",
+    "Algorithms/Hashing.md",
+    "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240218155708.png",
+    "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240218155657.png",
     "Algorithms/Heap.md",
     "Algorithms/Algorithm Photos/Pasted image 20240213172147.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213172055.png",
@@ -195,10 +187,6 @@
     "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
     "Algorithms/Algo Homework/algohomeworkpictures/2024-02-07T02:05:05,402735727+08:00.png",
-    "Algorithms/Algo Homework/algohomeworkpictures/2024-02-07T02:04:24,585551679+08:00.png",
-    "Algorithms/Algo Homework/algohomeworkpictures/2024-01-31T10:09:55,588944871+08:00.png",
-    "Algorithms/Algorithm Photos/2024-02-07T02:04:24,585551679+08:00.png",
-    "Algorithms/Algorithm Photos/2024-02-07T02:05:05,402735727+08:00.png",
     "Algorithms/Master's Theorem.md",
     "Computation Structures/Hardware Related Topics/CMOS technology.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
@@ -224,8 +212,6 @@
     "Games Of Histories/Week 1.md",
     "templates/latexmathtemplates/gathermath.md",
     "README.md",
-    "templates/latexmathtemplates/gathemath.md",
-    "Untitled.canvas",
-    "Computation Structures/Hardware Related Topics/Basics of Information.md"
+    "Untitled.canvas"
   ]
 }

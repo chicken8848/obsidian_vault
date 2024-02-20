@@ -100,17 +100,11 @@ f(n) = n^0 = n^{\log_2 1} \\
 \end{gather}
 $$
 ## Part ii
-If heap size is odd, then we know that the first element would be on a different node from the second element. However, they will only be one node away, meaning that they will merge at the grandparent of the two starting locations. Before that point, the differences in starting location does matter, as it might stop at one parent, and the starting locations would matter. However, past the grandparent, we would get the same heap regardless of the starting position.
-
+If heap size is odd, then we know that the first element would be on a different node from the second element. However, they will only be one node away, meaning that they will merge at the grandparent of the two starting locations. Before that point, the differences in starting location does matter, as it might stop at one parent, and the starting locations would matter.
 ## Part iii
-It is true. When updating index $i$ with any value at any time, we can assume that the path taken is the same. As the path is location dependent and not key dependent. The pseudocode for swapping is as follows:
-```
-while i > 1 and A[i].key > A[parent(i)].key do
-		swap A[i] and A[parent(i)]
-		i <- parent(i)
-```
-As such, we only need to consider a single line from the leaf to the root node, that satisfies the max heap property, and there is only one permutation for any unique set of numbers to satisfy the max heap property. Hence it will always give the same heap.
-
+It is false. 
+![[Pasted image 20240221015828.png]]
+Here we note that there exists a $b$ and $d$ such that $\frac{d}{2} < b < 2d$, such that after changing the operation execution, it does not produce the same heap.
 # Question 3
 ```
 function TRI_INSERT(T,x)
@@ -190,81 +184,211 @@ class Student
 	attribute parent
 	attribute left
 	attribute right
+	attribute height
+	attribute balance_factor = right.height - left.height
 
-function left(i)
-	Require: i is an index
-	return 2 * i + 1
+function left_rotate(x, z)
+	Require: x is a student to be rotated left
+	Require: z is a student right child of x and is right heavy
+	inner_child = z.left
+	x.right = inner_child
+	if (inner_child != null)
+		inner_child.parent = x
+	z.left = x
+	x.parent = z
+	if z.balance_factor is 0
+		x.balance_factor = 1
+		z.balance_factor = -1
+	else
+		x.balance_factor = 0
+		z.balance_factor = 0
+	return z
 
-function right(i)
-	Require i is an index
-	return 2 * i + 2
+function right_rotate(x, z)
+	Require: x is a student to be rotated left
+	Require: z is a student left child of x and is left heavy
+	inner_child = z.right
+	x.left = inner_child
+	if (inner_child != null)
+		inner_child.parent = x
+	z.right = x
+	x.parent = z
+	if z.balance_factor is 0
+		x.balance_factor = 1
+		z.balance_factor = -1
+	else
+		x.balance_factor = 0
+		z.balance_factor = 0
+	return z
 
-function parent(i)
-	Require: i is an index
-	return floor((i-1) / 2)
-	
+function right_left_rotate(x, z)
+	Require: x is a student to be rebalanced
+	Require: z is a right child of its parent x and balance_factor < 0
+	inner_child = z.left 
+	weight = inner_child.right
+	z.left = weight
+	if (weight != NULL) 
+		weight.parent = z
+	inner_child.right = z
+	z.parent = inner_child
+	weight2 = inner_child.left
+	x.right = weight2
+	if (weight != NULL)
+		weight.parent = x
+	inner_child.left = x
+	x.parent = inner_child
+	if inner_child.balance_factor is 0
+		x.balance_factor = 0
+		z.balance_factor = 0
+	else if inner_child.balance_factor > 0
+		x.balance_factor = -1
+		z.balance_factor = 0
+	else
+		x.balance_factor = 0
+		z.balance_factor = 1
+	inner_child.balance_factor = 0
+	return inner_child
+
+function left_right_rotate(x, z)
+	Require: x is a student to be rebalanced
+	Require: z is a left child of its parent x and balance_factor > 0
+	inner_child = z.right
+	weight = inner_child.left
+	z.right = weight
+	if (weight != NULL) 
+		weight.parent = z
+	inner_child.left = z
+	z.parent = inner_child
+	weight2 = inner_child.right
+	x.left = weight2
+	if (weight != NULL)
+		weight.parent = x
+	inner_child.right = x
+	x.parent = inner_child
+	if inner_child.balance_factor is 0
+		x.balance_factor = 0
+		z.balance_factor = 0
+	else if inner_child.balance_factor > 0
+		x.balance_factor = -1
+		z.balance_factor = 0
+	else
+		x.balance_factor = 0
+		z.balance_factor = 1
+	inner_child.balance_factor = 0
+	return inner_child
+
+function insert_student(S,x)
+	Require: S is an AVL Tree
+	Require: x is a student to be inserted
+	y = NULL
+	z = S.root
+	if z is NULL:
+		S.root = x
+	while z != NULL
+		y = z
+		if x.score < z.score
+			z = z.left
+		else 
+			z = z.right
+	if x.score < y.score
+		y.left = x
+	else
+		y.right = x
+
+function balance_tree(S,x)
+	Require: S is an AVL Tree
+	Require: x the student to start from to rebalance
+	z = x.parent
+	while z != NULL
+		if x == z.right
+			if z.balance_factor > 0
+				r_parent = z.parent
+				if x.balance_factor < 0
+					dr_node = right_left_rotate(z, x)
+				else
+					dr_node = left_rotate(z, x)
+			else
+				if z.balance_factor < 0
+					z.balance_factor = 0
+					break
+				z.balance_factor = 1
+				x = z
+				continue
+		else
+			if z.balance_factor < 0
+				r_parent = z.parent
+				if x.balance_factor > 0
+					dr_node = left_right_rotate(z, x)
+				else
+					dr_node = right_rotate(z, x)
+			else
+				if z.balance_factor > 0
+					z.balance_factor = 0
+					break
+				z.balance_factor = -1
+				x = z
+				continue
+		dr_node.parent = r_parent
+		if r_parent != NULL
+			if z == r_parent.left
+				r_parent.left = dr_node
+			else
+				r_parent.right = dr_node
+		else
+			S.root = dr_node
+			break
+		z = x.parent
 
 function NEW_STUDENT_POINTS(S,x)
-	Require: S[1...n] is a max heap
-	Require: x is a student to be insterted
-	S.length <- S.length + 1
-	S[S.heap_size] = x
-	i <- S.heap_size
-	while i > 1 and S[i].key > S[parent(i)].key do
-		swap S[i] and S[parent(i)]
-		i <- parent(i)
+	Require: S is an AVL Tree
+	Require: x is a student to be inserted
+	insert_student(S,x)
+	balance_tree(S,x)
+	
 
 function UPDATE_POINTS(S,x,a)
-	i = 0
-	while x.key != S[i].key and S[i] != NULL
-		if x.key > S[i].key
-			i = right(i)
-		else 
-			i = left(i)
-	if S[i] != NULL
-		S[i].key = a
-		while i > 1 and S[i].key > S[parent(i)].key do
-			swap S[i] and S[parent(i)]
-			i <- parent(i)
+	Require: S is an AVL Tree
+	Require: x is a student to update the score
+	Require: a is the score to update to
+	x.score = a
+	while x.score > x.parent.score and x.parent != NULL
+		y = x.parent
+		x.parent = y.parent
+		y.left = x.left
+		x.left = y
+		temp = y.right
+		y.right = x.right
+		x.right = temp
+	while x.score > x.right.score and y != NULL
+		y = x.right
+		temp = y.left
+		y.left = x.left
+		x.left = temp
+		x.right = y.right
+		y.right = x
+		y.parent = x.parent
+		x.parent = y
+	balance_tree(S,x)
 
 function GET_LOWEST_TEN(S)
+	Require: S is an AVL tree
 	if S.length < 10:
 		return S
 	else
-		heap_sort(S)
-		return S[0:10]
+		array = postorder(S.root)
+		return array[0:10] // first ten nodes
 
-function heap_sort(arr)
-    heap_size = arr.size
-    build_max_heap(arr)
-    i <- arr.size
-    while i >= 0 {
-      swap(arr[0], arr[i]);
-      max_heapify(0, i);
-      i = i - 1
-
-function build_max_heap(arr)
-	i = floor(arr.size / 2)
-    while i >= 0 {
-      max_heapify(arr, j, arr.size())
-      i = i - 1
-
-function max_heapify(arr, index, heap_size)
-	largest = index;
-    l = left(index);
-    r = right(index);
-    if (l < heap_size and arr[l] > arr[largest]) {
-      largest = l;
-    }
-    if (r < heap_size and arr[r] > arr[largest]) {
-      largest = r;
-    }
-    if (largest != index) 
-      swap(arr[index], arr[largest])
-      max_heapify(largest, heap_size)
+function postorder(node):
+	array = []
+	if node = NULL, then:
+		return
+	array += postorder(node.left)
+	array += postorder(node.right)
+	array += node
+	return array
 ```
 
 
 # Question 5
 ![[Pasted image 20240218155657.png]]
-![[Pasted image 20240218155708.png]]
+![[Pasted image 20240221014542.png]]
