@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 1.md",
+                "file": "Games Of Histories/Week 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b99619c77a748e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Games Of Histories/Game of History.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 1.md",
+                "file": "Games Of Histories/Game of History.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 1.md",
+                "file": "Games Of Histories/Game of History.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Algo Homework/Homework Set 1.md"
+                "file": "Games Of Histories/Game of History.md"
               }
             }
           },
@@ -178,8 +190,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d6a51e1c16c6c031",
+  "active": "4b99619c77a748e7",
   "lastOpenFiles": [
+    "Games Of Histories/Timeline.md",
+    "Games Of Histories/Game of History.md",
+    "Games Of Histories/Week 1.md",
+    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
+    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
+    "Computation Structures/Hardware Related Topics/Basics of Information.md",
+    "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Heap.md",
     "Algorithms/Document Distance.md",
     "Algorithms/Divide and Conquer.md",
@@ -190,7 +209,6 @@
     "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Computation Structures/Hardware Related Topics/CMOS technology.md",
     "Computation Structures/Hardware Related Topics/Finite State Machine.md",
-    "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 3.md",
     "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240226154205.png",
@@ -203,12 +221,10 @@
     "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240218155657.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213172147.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213172055.png",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
     "Algorithms/Algorithm Photos/Pasted image 20240213105106.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213105049.png",
     "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
-    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Algorithms/Algo Homework/Bonus Set 1.md",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
@@ -222,9 +238,6 @@
     "Algorithms/Algo Homework/Homework Set 1.pdf",
     "Algorithms/Algo Homework/Homework Set 1.log",
     "Computation Structures/Course Links.md",
-    "Algorithms/Python Specific Implementation.md",
-    "Games Of Histories/Week 1.md",
-    "templates/latexmathtemplates/gathermath.md",
     "Untitled.canvas"
   ]
 }
