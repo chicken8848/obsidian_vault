@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Games Of Histories/Game of History.md",
+                "file": "Algorithms/Hashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3efafb62e6c54a9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Shortest Paths.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Games Of Histories/Game of History.md",
+                "file": "Shortest Paths.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Games Of Histories/Game of History.md",
+                "file": "Shortest Paths.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Games Of Histories/Game of History.md"
+                "file": "Shortest Paths.md"
               }
             }
           },
@@ -190,10 +202,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "4b99619c77a748e7",
+  "active": "3efafb62e6c54a9d",
   "lastOpenFiles": [
-    "Games Of Histories/Timeline.md",
+    "Algorithms/Hashing.md",
+    "Shortest Paths.md",
     "Games Of Histories/Game of History.md",
+    "Games Of Histories/Timeline.md",
     "Games Of Histories/Week 1.md",
     "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
     "Computation Structures/Hardware Related Topics/Quantifying Information.md",
@@ -204,7 +218,6 @@
     "Algorithms/Divide and Conquer.md",
     "Algorithms/Proofs.md",
     "Algorithms/Master's Theorem.md",
-    "Algorithms/Hashing.md",
     "Algorithms/Binary Search Tree.md",
     "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Computation Structures/Hardware Related Topics/CMOS technology.md",
@@ -237,7 +250,6 @@
     "Algorithms/Algo Homework/Homework Set 1.synctex.gz",
     "Algorithms/Algo Homework/Homework Set 1.pdf",
     "Algorithms/Algo Homework/Homework Set 1.log",
-    "Computation Structures/Course Links.md",
     "Untitled.canvas"
   ]
 }
