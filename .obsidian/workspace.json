@@ -54,9 +54,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f4bed143bcc09259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Hashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3655707e389e157e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Dynamic Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shortest Paths.md",
+                "file": "Algorithms/Dynamic Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shortest Paths.md",
+                "file": "Algorithms/Dynamic Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shortest Paths.md"
+                "file": "Algorithms/Dynamic Programming.md"
               }
             }
           },
@@ -202,10 +226,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3efafb62e6c54a9d",
+  "active": "3655707e389e157e",
   "lastOpenFiles": [
     "Algorithms/Hashing.md",
+    "Algorithms/Dynamic Programming.md",
+    "Algorithms/Time Complexity.md",
+    "Algorithms/Divide and Conquer.md",
+    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Shortest Paths.md",
+    "Algorithms/Algo Homework/Homework Set 5.md",
     "Games Of Histories/Game of History.md",
     "Games Of Histories/Timeline.md",
     "Games Of Histories/Week 1.md",
@@ -215,14 +244,11 @@
     "Algorithms/Algo Homework/Homework Set 1.md",
     "Algorithms/Heap.md",
     "Algorithms/Document Distance.md",
-    "Algorithms/Divide and Conquer.md",
     "Algorithms/Proofs.md",
     "Algorithms/Master's Theorem.md",
     "Algorithms/Binary Search Tree.md",
-    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Computation Structures/Hardware Related Topics/CMOS technology.md",
     "Computation Structures/Hardware Related Topics/Finite State Machine.md",
-    "Algorithms/Time Complexity.md",
     "Algorithms/Algo Homework/Homework Set 3.md",
     "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240226154205.png",
     "Algorithms/Algo Homework/Problem Set 1.md",
@@ -238,11 +264,9 @@
     "Algorithms/Algorithm Photos/Pasted image 20240213105049.png",
     "Algorithms/Algo Homework/Bonus Set 2.md",
     "Algorithms/Algo Homework/Homework Set 2.md",
-    "Algorithms/Algo Homework/Bonus Set 1.md",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
     "Algorithms/Algo Homework/Pictures",
-    "Computation Structures/ProblemSets/Logic Synthesis Pset.md",
     "Computation Structures/ProblemSets/CompStructPsetAsset",
     "Computation Structures/ProblemSets",
     "Algorithms/Algo Homework/Homework Set 1.synctex(busy)",
