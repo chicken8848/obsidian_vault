@@ -143,28 +143,43 @@ The smallest possible value for $l*(A)$ is 1. If they were ordered in descending
 $l*(A) = 8$. Considering the first 4 comes near the end, we consider sets that run up to and after 4. Of which the set running after 4 is longer with length 8.
 
 ## Part iv
-`memo` takes note of the $l*(A)$ of the subarrays that we have computed
+`memo` takes note of the LCS of the subarrays that we have computed
 
-Subproblem: what is the maximum value of $l*(A[1:i]), 1 \leq i \leq n$
+A with length m
 
-The base case is $l*(A[1:1])$ which returns 1
+Then initiate the longest possible nicely ordered subarray with length n
+
+Find the LCS
+
+Subproblem: Compute `DP[i,j]` for all $1 \leq i \leq m, 1 \leq j \leq n$
+
+Let `DP[i,j]` denote any LCS of $X_i, Y_j$
+
+The base case is `DP[i,j] = {}` whenever i = 0 or j = 0
 
 ```
 memo = {}
-function q4(i)
-	if memo[i] exists:
-		return memo[i]
-	else if i == 1:
-		memo[i] = 1
-		return memo[i]
+longest_possible_nicely_ordered_subarray = [i % 10 for i in A.length() + 9]
+function q4(i,j)
+	if (i,j) in memo then:
+		return memo[(i,j)]
+	if i = 0 or j = 0 then:
+		memo[(i,j)] = {}
+		return {}
+	if A[i] == longest_possible_nicely_ordered_subarray[j] then:
+		seq = DP[i-1,j-1].append(A[i])
+		memo[(i,j)] = seq
+		return seq
 	else:
-		if A[i-1] - A[i] % 10 == 1:
-			memo[i] = q4(i-1) + 1
-			return memo[i]
+		if DP(i-1,j).length >= DP(i,j-1).length then:
+			memo[(i,j)] = DP(i-1, j)
+			return DP(i-1, j)
 		else:
-			memo[i] = memo[i-1]
-			return memo[i]
+			memo[(i,j)] = DP(i, j-1)
+			return DP(i, j-1)
+
+run DP(m,n)
 ```
 
-The time complexity is $O(2^n)$$
+The time complexity is $O(2^n)$
 The space complexity is $O(2^n)$
