@@ -2,7 +2,7 @@
 ## Part i
 Yes it is possible, consider a grid of squares with only negative integers in the squares. Then any sum of the integers would be negative. However, if we pick and invalid set, the game score = 0. Which is more than a negative number.
 ## Part ii
-The maximum score is 8. In order for us to have the set be valid we extract the positive numbers
+In order for us to have the set be valid we extract the positive numbers
 
 | 1   | 3   | 7   |
 | --- | --- | --- |
@@ -183,3 +183,16 @@ run DP(m,n)
 
 The time complexity is $O(2^n)$
 The space complexity is $O(2^n)$
+
+# Question 5
+
+## Part i
+In order to reach the (5,5) square from the (1,1) square, the minimum amount of jumps is 3. We start from the end, and find the furthest square that can reach (5,5) in one jump, and continue down until we reach (1,1)
+
+## Part ii
+If there exists `A[i][j]` $\geq m - i + n - j$
+And that for such an `A[i][j]`, `A[1][1]` $\geq i - 1 + j - 1$
+Then we can reach the `(m,n)` square in 2 jumps.
+As we only have one intermediate square, the square must give enough energy to reach (m,n) from its given position. And then be reachable from the start position.
+
+## Part iii
