@@ -78,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4df01cda05dc277c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/Algo Homework/Problem Set 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms/Dynamic Programming.md",
+                "file": "Algorithms/Algo Homework/Problem Set 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms/Dynamic Programming.md",
+                "file": "Algorithms/Algo Homework/Problem Set 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms/Dynamic Programming.md"
+                "file": "Algorithms/Algo Homework/Problem Set 2.md"
               }
             }
           },
@@ -226,10 +238,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3655707e389e157e",
+  "active": "4df01cda05dc277c",
   "lastOpenFiles": [
-    "Algorithms/Hashing.md",
     "Algorithms/Dynamic Programming.md",
+    "Algorithms/Algo Homework/Problem Set 2.md",
+    "Algorithms/Hashing.md",
     "Algorithms/Time Complexity.md",
     "Algorithms/Divide and Conquer.md",
     "Computation Structures/Hardware Related Topics/Sequential Logic.md",
@@ -263,7 +276,6 @@
     "Algorithms/Algorithm Photos/Pasted image 20240213105106.png",
     "Algorithms/Algorithm Photos/Pasted image 20240213105049.png",
     "Algorithms/Algo Homework/Bonus Set 2.md",
-    "Algorithms/Algo Homework/Homework Set 2.md",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
     "Algorithms/Algo Homework/Pictures",
