@@ -178,7 +178,7 @@ function q4(i,j)
 			memo[(i,j)] = DP(i, j-1)
 			return DP(i, j-1)
 
-run DP(m,n)
+print(DP(m,n).length())
 ```
 
 The time complexity is $O(2^n)$
@@ -196,3 +196,30 @@ Then we can reach the `(m,n)` square in 2 jumps.
 As we only have one intermediate square, the square must give enough energy to reach (m,n) from its given position. And then be reachable from the start position.
 
 ## Part iii
+`memo` records the jumps taken to reach spot `(i,j)`
+
+Subproblem: compute the largest (i,j) possible in 2 jumps, for $1 \leq i \leq m, 1 \leq j \leq n$
+
+The base case is i = 1, j = 1, in which case we return 0
+
+```
+memo = {}
+function q5(i,j)
+	if memo[(i,j)] exists:
+		return memo[(i,j)]
+	else if i == 1 && j == 1:
+		memo[(i,j)] = 0;
+		return memo[(i,j)]
+	else:
+		temp_min = inf
+		for ii in i:
+			for jj in j:
+				if A[ii][jj] >= i - ii + j - jj:
+					if temp_min > q5(ii,jj) + 1:
+						temp_min = q5(ii,jj) + 1
+		memo[(i,j)] = temp_min
+		return memo[(i,j)]
+```
+
+The time complexity is $O(2^n)$
+The space complexity is $O(m \times n)$
