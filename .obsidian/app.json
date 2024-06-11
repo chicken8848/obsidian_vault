@@ -5,7 +5,8 @@
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 70
+    "downscalePercent": 73
   },
-  "vimMode": true
+  "vimMode": true,
+  "readableLineLength": false
 }

@@ -97,9 +97,9 @@ Time complexity of $O(m \times n)$
 # Question 3
 
 ## Part i
-We can at most do 2 mini games. Hence we take the two that would give us the most points under an hour. 35 + 40 = 75
+We can at most do 2 mini games. Hence we take the two that would give us the most points under an hour, which is 70 points
 ## Part ii
-The biggest is 151. Following the algorithm of the knapsack problem. We end up with 151.
+The biggest is 151. Following the algorithm of the unbounded knapsack problem. We end up with 151.
 ## Part iii
 Subproblem: Compute `r[i]` for all $1\leq i \leq n$ for time j, $1 \leq j \leq k$
 
@@ -109,23 +109,12 @@ The base case is i = 0, or j = 0, in which case we return 0
 
 ```
 memo = {}
-function q3(i, j)
-	if (i,j) in memo then:
-		return memo[(i,j)]
-	if i = 0 or j = 0 then:
-		memo[(i,j)] = 0
-		return 0
-	else:
-		if t[i] > j then:
-			val <- q3(i-1, j)
-			memo[(i,j)]
-			return val
-		else:
-			val <- max(q3(i-1, j), r[i] + q3(i-1, j-t[i]))
-			memo <- val
-			return val
-
-run q3(n, k)
+function q3(k, t, r)
+	memo = [0 for i in range(k)]
+	for i in range(n):
+		for j from j = t[i] up to k:
+			memo[j] = max(memo[j], memo[j-(t[i]+2)] + r[i])
+	return memo[k]
 ```
 
 The time complexity is $O(2^n)$ and space complexity is $O(n)$
