@@ -179,6 +179,7 @@ pthread_mutex_unlock(&mutex);
 ```
 
 # Synchronisation in Java
+
 In Java, a `synchronized` method or block of code is used to ensure that only one thread can execute it at any given time. This is achieved by acquiring an exclusive lock on an object before executing the `synchronized` code.
 
 When a thread tries to enter a synchronized method or block, it must first acquire the lock associated with the object on which the method or block is declared. If another thread already holds this lock, then the current thread will be blocked until the lock becomes available.
@@ -219,3 +220,143 @@ The benefits of using `synchronized` methods include:
 2. Preventing deadlocks: Synchronization helps to prevent deadlocks by ensuring that threads do not get stuck in an infinite loop of waiting for each other.
 
 However, it's essential to note that excessive use of synchronized methods can lead to performance issues due to the overhead of acquiring and releasing locks. Therefore, it's crucial to carefully consider the synchronization requirements for your application and use alternative concurrency mechanisms (e.g., Java 5's AtomicInteger) when possible.
+
+## Condition Synchronisation
+The `wait()` and `notify()` (or `notifyAll()`) methods are used to synchronize threads in Java. They are part of the Object class, which means they can be called on any object.
+
+### Wait():
+
+The `wait()` method is used by a thread to suspend its execution until it's notified or interrupted. When a thread calls `wait()`, it releases the lock on the object and goes into a waiting state.
+
+Here are some key points about the `wait()` method:
+
+⦁ It must be called in a synchronized block.
+⦁ The thread will release the lock on the object before going to sleep.
+⦁ The thread can be woken up by another thread calling `notify()` or `notifyAll()`.
+⦁ If an interrupt is received while waiting, an InterruptedException is thrown.
+
+### Notify():
+
+The `notify()` method wakes up one of the threads that are currently waiting for this lock. It's like a "pick" from the wait set - it chooses one random thread to wake up and let continue executing.
+
+Here are some key points about the `notify()` method:
+
+⦁ It must be called in a synchronized block.
+⦁ Only one thread is woken up by calling `notify()`.
+⦁ The chosen thread will release the lock on the object before continuing execution.
+⦁ If there are no threads waiting, calling `notify()` has no effect.
+
+### NotifyAll():
+
+The `notifyAll()` method wakes up all of the threads that are currently waiting for this lock. It's like a "wake-up call" to all the threads in the wait set - they will all be woken up and let continue executing.
+
+Here are some key points about the `notifyAll()` method:
+
+⦁ It must be called in a synchronized block.
+⦁ All threads that were waiting on this object will be woken up by calling `notifyAll()`.
+⦁ Each thread will release the lock on the object before continuing execution.
+⦁ If there are no threads waiting, calling `notifyAll()` has no effect.
+
+### Example:
+
+Here's an example of how you might use these methods:
+```java
+public synchronized void doWork(int id)
+{
+   while (turn != id) // turn is a shared variable
+   {
+       try
+       {
+           wait();
+       }
+       catch (InterruptedException e)
+       {
+       }
+   }
+   // CRITICAL SECTION
+   // ...
+   turn = (turn + 1) % N;
+   notify();
+}
+```
+
+Important Notes:
+
+⦁ Always use these methods in a synchronized block.
+⦁ Never call `wait()`, `notify()`, or `notifyAll()` directly from the main thread (i.e., outside of any synchronized block).
+⦁ Be careful when using these methods, as they can lead to deadlocks if not used correctly.
+
+### Fine-Grained Condition Synchronization
+The answer you are looking for!
+
+Java provides a mechanism called "condition variables" or "fine-grained condition synchronization" to allow threads to wait and notify each other in a more flexible way than traditional locks.
+
+Condition variables are used to synchronize threads at a finer granularity than traditional locks. A lock can be thought of as a "big" mutex, whereas a condition variable is like a "small" mutex that allows multiple threads to wait and notify each other in a more flexible way.
+
+Here's how it works:
+
+1. Lock: Acquire the lock (mutex) before accessing shared data.
+2. Wait/Notify: Use wait() or notify() methods on a condition variable associated with the lock.
+3. Signal: When some condition is met, signal other threads waiting on that condition using notify().
+4. Wake up: Threads waiting on the condition will wake up and re-acquire the lock to continue execution.
+
+This allows for more efficient synchronization because:
+
+⦁ Multiple threads can wait and notify each other without blocking all threads.
+⦁ Condition variables can be used with multiple locks, allowing for more complex synchronization scenarios.
+
+In Java, you can use java.util.concurrent package's Lock, Condition, and related classes to implement fine-grained condition synchronization. The knowledge base mentions this in the context of concurrency features introduced in Java 1.5.
+
+```java
+Lock lock = new ReentrantLock();
+Condition lockCondition = lock.newCondition(); // call this multiple times if you have more than 1 condition
+
+// Step 1: LOCK
+lock.lock(); // remember, need to lock before calling await()
+
+// Step 2a: WAIT
+// To wait for specific condition:
+lockCondition.await();
+
+// OR Step 2b: SIGNAL
+// To signal specific thread waiting for this condition:
+lockCondition.signal();
+// ...
+// ...
+
+// Step 3: UNLOCK
+lock.unlock();
+```
+
+# Deadlock
+Definition of Deadlock:
+Deadlock is a situation where two or more processes (or threads) are blocked indefinitely, each waiting for the other to release a resource necessary to continue execution. In other words, there's a circular dependency between the processes and resources involved.
+
+Implications in Systems with Finite Resources:
+
+1. System Resource Tying: When deadlocks occur, system resources become tied up, preventing other jobs from starting or continuing their execution.
+2. Infinite Waiting: Processes are stuck waiting for each other to release resources, leading to an infinite loop of waiting and blocking.
+3. Starvation: Some processes may never complete their designated tasks due to the deadlock cycle.
+
+To illustrate this concept:
+
+Suppose we have two processes, P1 and P2, competing for two shared resources (R1 and R2). The situation is as follows:
+	⦁ P1 holds R1 but needs R2.
+	⦁ P2 holds R2 but needs R1.
+In this scenario, both processes are blocked indefinitely because each process requires a resource held by the other. This creates a deadlock cycle.
+
+This implies that for deadlock to occur, the following conditions must be met:
+1. Mutual exclusion: Multiple processes are competing for shared resources.
+2. Hold and wait: A process is holding onto a resource while waiting for another resource.
+3. No preemption: There is no mechanism to force a process to release its held resources.
+4. Circular Wait: multiple processes or threads are blocked because each one is waiting for another process or thread to release a resource, but none of them can proceed until all of them have released their resources.
+All 4 conditions must hold for deadlock to become possible.
+
+Deadlock Prevention:
+To prevent a deadlock from occurring in the first place, we can ensure that at least one of the four necessary conditions for a deadlock to occur cannot hold. This approach is known as "deadlock prevention." By examining each of these four necessary conditions separately, we can identify ways to prevent deadlocks.
+
+Deadlock Avoidance:
+In systems with multiple instances of each resource type (Figure 7.9), deadlock avoidance involves ensuring that the system never reaches a state where a deadlock could occur. This is achieved by maintaining information about the current allocation of resources and executing an algorithm to detect potential deadlocks before they actually happen.
+
+Deadlock Detection:
+When a deadlock has already occurred, we need to recover from it. A detection-and-recovery scheme requires overhead that includes runtime costs for maintaining necessary information and executing the detection algorithm as well as potential losses inherent in recovering from a deadlock (Section 7.6). The goal of deadlock detection is to identify when a deadlock has occurred and then take steps to recover from it.
