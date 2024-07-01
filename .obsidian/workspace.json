@@ -4,237 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "90d55bd9f1486303",
+        "id": "dae72e943ecf4941",
         "type": "tabs",
         "children": [
           {
-            "id": "2a1fd84bf6494aa8",
+            "id": "9275401ee323ad04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computation Structures/Hardware Related Topics/Sequential Logic.md",
+                "file": "Computational Systems/CSE Revision I.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d6a51e1c16c6c031",
+            "id": "e5cf9b5b5f0388ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Games Of Histories/Week 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b99619c77a748e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Hashing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3efafb62e6c54a9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Shortest Paths.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f4bed143bcc09259",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Hashing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3655707e389e157e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Dynamic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4df01cda05dc277c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithms/Algo Homework/Problem Set 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "803503ca956a4ce6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Info Sys/CheatSheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31b556666de89fce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/OS services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e91cab0fd266e1b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/OS Design Structure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6fde209b6db12fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/OS Design Structure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b97d0b88b87a2bf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Computational Systems/Computation Systems Photos/Pasted image 20240527132609.png"
-              }
-            }
-          },
-          {
-            "id": "f00a55ca20865e37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modern China/Qing Dynasty.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4fe4433d36d92939",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modern China/Rebellions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1823002ac8066355",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Constitutional Law.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "73eddb50d671ae2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Legal Profession.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cdcbcf67bd073df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/Processes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d8e1a0e77e9689a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/OS services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc3bee5adf260f8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computational Systems/Software Synchronisation.md",
+                "file": "Computational Systems/CSE Revision I.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 18
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -300,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computational Systems/Software Synchronisation.md",
+                "file": "Computational Systems/CSE Revision I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -317,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computational Systems/Software Synchronisation.md",
+                "file": "Computational Systems/CSE Revision I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -340,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computational Systems/Software Synchronisation.md"
+                "file": "Computational Systems/CSE Revision I.md"
               }
             }
           },
@@ -381,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 233.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -397,20 +196,29 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "27011d458a4f12df",
+  "active": "e5cf9b5b5f0388ce",
   "lastOpenFiles": [
+    "Computational Systems/Computation Systems Photos/Pasted image 20240701205806.png",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240701181837.png",
+    "Computational Systems/CSE Revision I.md",
+    "Computational Systems/Interprocess Communication.md",
+    "Computational Systems/Software Synchronisation.md",
+    "ESC/ce5 task2.md",
+    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "smart-chats/UNTITLED CHAT 2024-06-11 02 28 21.md",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240618113223.png",
+    "ESC/ce4task1.md",
+    "ESC/ce4taks2.md",
+    "ESC",
+    "Computational Systems/UNIX Filesystem.md",
     "smart-chats",
     "Computational Systems/OS services.md",
-    "Computational Systems/Software Synchronisation.md",
     "Modern China/Qing Dynasty.md",
-    "Interprocess Communication.md",
     "Computational Systems/Processes.md",
     "Court Systems.md",
-    "The Legal Profession.md",
+    "Computational Systems/The Legal Profession.md",
     "Constitutional Law.md",
     "Modern China/Rebellions.md",
-    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "Computational Systems/Computation Systems Photos/Pasted image 20240527135633.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240527135149.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240527134525.png",
@@ -418,12 +226,9 @@
     "Computational Systems/Computation Systems Photos/Pasted image 20240527132609.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240527133924.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240527132700.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527132034.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527131306.png",
     "Computational Systems/OS Design Structure.md",
     "Algorithms/Shortest Paths.md",
     "Modern China",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240521122124.png",
     "Computational Systems/Computation Systems Photos",
     "Info Sys/CheatSheet.md",
     "Computational Systems",
@@ -433,18 +238,11 @@
     "Algorithms/Time Complexity.md",
     "Algorithms/Divide and Conquer.md",
     "Algorithms/Algo Homework/Homework Set 5.md",
-    "Games Of Histories/Game of History.md",
-    "Games Of Histories/Timeline.md",
-    "Games Of Histories/Week 1.md",
-    "Computation Structures/Hardware Related Topics/Digital Abstraction.md",
-    "Computation Structures/Hardware Related Topics/Quantifying Information.md",
-    "Computation Structures/Hardware Related Topics/Basics of Information.md",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
     "Algorithms/Algo Homework/Pictures",
     "Computation Structures/ProblemSets/CompStructPsetAsset",
     "Computation Structures/ProblemSets",
-    "Algorithms/Algo Homework/Homework Set 1.synctex(busy)",
     "Untitled.canvas"
   ]
 }
