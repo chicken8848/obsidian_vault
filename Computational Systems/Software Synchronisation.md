@@ -287,8 +287,6 @@ Important Notes:
 ⦁ Be careful when using these methods, as they can lead to deadlocks if not used correctly.
 
 ### Fine-Grained Condition Synchronization
-The answer you are looking for!
-
 Java provides a mechanism called "condition variables" or "fine-grained condition synchronization" to allow threads to wait and notify each other in a more flexible way than traditional locks.
 
 Condition variables are used to synchronize threads at a finer granularity than traditional locks. A lock can be thought of as a "big" mutex, whereas a condition variable is like a "small" mutex that allows multiple threads to wait and notify each other in a more flexible way.
@@ -360,3 +358,5 @@ In systems with multiple instances of each resource type (Figure 7.9), deadlock 
 
 Deadlock Detection:
 When a deadlock has already occurred, we need to recover from it. A detection-and-recovery scheme requires overhead that includes runtime costs for maintaining necessary information and executing the detection algorithm as well as potential losses inherent in recovering from a deadlock (Section 7.6). The goal of deadlock detection is to identify when a deadlock has occurred and then take steps to recover from it.
+
+Deadlock Recovery:
