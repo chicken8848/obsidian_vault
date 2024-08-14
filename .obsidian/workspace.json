@@ -25,14 +25,74 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Constitutional Law.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8844cddc86981ac2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ESC/ce10 task 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1e6793d9036ddd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Computational Systems/CSE Revision I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f6213ce66908440d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computational Systems/CSE Revision II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd2f350fc6adda4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ESC/ESC Revision.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa166b36eccf7b35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ESC/ce10 task 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -98,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computational Systems/CSE Revision I.md",
+                "file": "ESC/ESC Revision.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computational Systems/CSE Revision I.md",
+                "file": "ESC/ESC Revision.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computational Systems/CSE Revision I.md"
+                "file": "ESC/ESC Revision.md"
               }
             }
           },
@@ -196,17 +256,30 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "e5cf9b5b5f0388ce",
+  "active": "fd2f350fc6adda4d",
   "lastOpenFiles": [
+    "ESC/escdiagrams/Pasted image 20240813144923.png",
+    "ESC/ESC Revision.md",
+    "ESC/escdiagrams/Pasted image 20240813141907.png",
+    "Pasted image 20240730165526.png",
+    "Computational Systems/CSE Revision II.md",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240730164302.png",
+    "Computational Systems/CSE Revision I.md",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240728182304.png",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240728182200.png",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240728172342.png",
+    "ESC/ce10 task 2.md",
+    "ESC/escdiagrams",
+    "ESC/escdiagrams/Pasted image 20240719104948.png",
+    "ESC/ce11.md",
+    "Constitutional Law.md",
     "Computational Systems/Computation Systems Photos/Pasted image 20240701205806.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240701181837.png",
-    "Computational Systems/CSE Revision I.md",
     "Computational Systems/Interprocess Communication.md",
     "Computational Systems/Software Synchronisation.md",
     "ESC/ce5 task2.md",
     "Computation Structures/Hardware Related Topics/Sequential Logic.md",
     "smart-chats/UNTITLED CHAT 2024-06-11 02 28 21.md",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240618113223.png",
     "ESC/ce4task1.md",
     "ESC/ce4taks2.md",
     "ESC",
@@ -217,15 +290,7 @@
     "Computational Systems/Processes.md",
     "Court Systems.md",
     "Computational Systems/The Legal Profession.md",
-    "Constitutional Law.md",
     "Modern China/Rebellions.md",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527135633.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527135149.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527134525.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527134127.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527132609.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527133924.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240527132700.png",
     "Computational Systems/OS Design Structure.md",
     "Algorithms/Shortest Paths.md",
     "Modern China",
@@ -234,15 +299,10 @@
     "Computational Systems",
     "Algorithms/Dynamic Programming.md",
     "Algorithms/Algo Homework/Problem Set 2.md",
-    "Algorithms/Hashing.md",
-    "Algorithms/Time Complexity.md",
-    "Algorithms/Divide and Conquer.md",
-    "Algorithms/Algo Homework/Homework Set 5.md",
     "Algorithms/Algo Homework/algohomeworkpictures",
     "Algorithms/Algo Homework/algopictures",
     "Algorithms/Algo Homework/Pictures",
     "Computation Structures/ProblemSets/CompStructPsetAsset",
-    "Computation Structures/ProblemSets",
     "Untitled.canvas"
   ]
 }
