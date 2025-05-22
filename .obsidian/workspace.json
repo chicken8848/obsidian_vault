@@ -16,7 +16,23 @@
                 "file": "Computational Systems/CSE Revision I.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "CSE Revision I"
+            }
+          },
+          {
+            "id": "f33725b0c7bfbfd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agatos/DMO Performance.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DMO Performance"
             }
           },
           {
@@ -28,7 +44,9 @@
                 "file": "ESC/ce10 task 2.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ce10 task 2"
             }
           },
           {
@@ -40,11 +58,83 @@
                 "file": "Computational Systems/CSE Revision II.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "CSE Revision II"
+            }
+          },
+          {
+            "id": "6f79f0889b38d66b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agatos/DMO Project Requirements.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DMO Project Requirements"
+            }
+          },
+          {
+            "id": "24bf6616f3eac98a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computational Systems/Processes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Processes"
+            }
+          },
+          {
+            "id": "02d7ad70c5219231",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "28e69f02f31bcbfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Art of Exploitation/GDB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GDB"
+            }
+          },
+          {
+            "id": "e39450c8d738e7f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Art of Exploitation/Coding knowledge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Coding knowledge"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -63,8 +153,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -79,7 +172,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -87,7 +182,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -111,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computational Systems/CSE Revision II.md",
+                "file": "Agatos/DMO Project Requirements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +216,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for DMO Project Requirements"
             }
           },
           {
@@ -128,10 +227,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computational Systems/CSE Revision II.md",
+                "file": "Agatos/DMO Project Requirements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DMO Project Requirements"
             }
           },
           {
@@ -142,7 +243,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -151,8 +254,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computational Systems/CSE Revision II.md"
-              }
+                "file": "Agatos/DMO Project Requirements.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DMO Project Requirements"
             }
           },
           {
@@ -160,7 +265,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -168,7 +275,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -176,19 +285,13 @@
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "443ef8a4633a6b9d",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -204,58 +307,57 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "omnisearch:Omnisearch": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "a1e6793d9036ddd1",
+  "active": "e39450c8d738e7f7",
   "lastOpenFiles": [
+    "Art of Exploitation/GDB.md",
+    "Art of Exploitation/Coding knowledge.md",
+    "Untitled.md",
+    "Art of Exploitation",
+    "Untitled.canvas",
+    "Discrete Math/DM Homework/Homework Set 4 1006954 Joshua John Lee Shi Kai.md",
+    "Algorithms/Algo Homework/algohomeworkpictures/Pasted image 20240226154205.png",
+    "Discrete Math/DM Homework Photos/Pasted image 20250307000809.png",
+    "Discrete Math/DM Homework Photos",
+    "Discrete Math/DM Homework",
+    "Discrete Math",
+    "Algorithms/Algo Homework/Homework Set 1.md",
+    "Daily Notes/2025-02-14.md",
+    "templates/latexmathtemplates/gathermath.md",
+    "ESC/ESC Revision.md",
+    "ESC/ce4taks2.md",
+    "Algorithms/Proofs.md",
+    "Algorithms/Master's Theorem.md",
+    "Computational Systems/OS services.md",
+    "Computational Systems/OS Design Structure.md",
+    "Algorithms/Hashing.md",
+    "Algorithms/Dynamic Programming.md",
+    "Algorithms/Document Distance.md",
+    "Algorithms/Divide and Conquer.md",
     "Computational Systems/CSE Revision I.md",
+    "Daily Notes/Untitled 1.md",
     "Computational Systems/CSE Revision II.md",
+    "Daily Notes",
+    "Computational Systems/Processes.md",
+    "Computational Systems/Interprocess Communication.md",
+    "README.md",
+    "Useful Links.md",
+    "Court Systems.md",
+    "Constitutional Law.md",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240815135104.png",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240815135310.png",
+    "Computational Systems/Computation Systems Photos/Pasted image 20240815140039.png",
+    "Agatos",
     "Computational Systems/Computation Systems Photos/Pasted image 20240814180723.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240730165526.png",
-    "ESC/ESC Revision.md",
     "ESC/escdiagrams/Pasted image 20240813144923.png",
     "ESC/escdiagrams/Pasted image 20240813141907.png",
     "Computational Systems/Computation Systems Photos/Pasted image 20240730164302.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240728182304.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240728182200.png",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240728172342.png",
-    "ESC/ce10 task 2.md",
     "ESC/escdiagrams",
-    "ESC/escdiagrams/Pasted image 20240719104948.png",
-    "ESC/ce11.md",
-    "Constitutional Law.md",
-    "Computational Systems/Computation Systems Photos/Pasted image 20240701205806.png",
-    "Computational Systems/Interprocess Communication.md",
-    "Computational Systems/Software Synchronisation.md",
-    "ESC/ce5 task2.md",
-    "Computation Structures/Hardware Related Topics/Sequential Logic.md",
-    "smart-chats/UNTITLED CHAT 2024-06-11 02 28 21.md",
-    "ESC/ce4task1.md",
-    "ESC/ce4taks2.md",
     "ESC",
-    "Computational Systems/UNIX Filesystem.md",
     "smart-chats",
-    "Computational Systems/OS services.md",
-    "Modern China/Qing Dynasty.md",
-    "Computational Systems/Processes.md",
-    "Court Systems.md",
-    "Computational Systems/The Legal Profession.md",
-    "Modern China/Rebellions.md",
-    "Computational Systems/OS Design Structure.md",
-    "Algorithms/Shortest Paths.md",
-    "Modern China",
-    "Computational Systems/Computation Systems Photos",
-    "Info Sys/CheatSheet.md",
-    "Computational Systems",
-    "Algorithms/Dynamic Programming.md",
-    "Algorithms/Algo Homework/Problem Set 2.md",
-    "Algorithms/Algo Homework/algohomeworkpictures",
-    "Algorithms/Algo Homework/algopictures",
-    "Algorithms/Algo Homework/Pictures",
-    "Computation Structures/ProblemSets/CompStructPsetAsset",
-    "Untitled.canvas"
+    "Modern China"
   ]
 }

@@ -375,12 +375,211 @@ TCP proves reliable, in-order byte-stream transfer between client and server in 
 #### Three-way handshake
 Happens during connection establishment
 1. `SYN`
+	1. The client sends a `SYN` packet to the server to initiate a connection
+	2. The packet contains the client's initial sequence number (ISN=X)
 2. `SYN-ACK`
+	1. The server responsds with a `SYN-ACK` packet, acknowledging the receipt of the client's `SYN` packet
+	2. Packet contains initial sequence number (ISN = Y) and acknowledges the client's sequence number by setting the acknowledgement number to X+1.
 3. `ACK`
+		1. The client sends an `ACK` packet to the server, acknowledging the receipt of the server's `SYN-ACK` packet.
+		2. Packet contains (X+1) and acknowledges the server's sequence number by setting the acknowledgement number to Y+1
+		3. Data can be sent along with this in the same packet but is not required
+### UDP
+Connectionless protocol. This protocol provides an unreliable but fast, maybe out of order transfer of bytes between client and server. Each datagram is sent independently. There's no handshake process, and no prior arrangement It is identified using a 2-tuple: IP and port # of destination
 
 ## Describe the main differences between UDP and TCP, as well as their applications, pros/cons
+TCP is `SOCK_STREAM` and UDP is `DGRAM`
+UDP Server does not need to `accept` and UDP client does not need to `connect`, simply `sendto` and `recvfrom` the `sockfd` that you have defined.
+TCP ensures reliable, in-order byte-stream transfer, while UDP provides faster, connectionless communication with less reliability
 ## Explain client-server model of network applications
+- Client: a browser that requests, receives (using HTTP protocol), and displays (render) Web objects
+- Server: an application that sends (using HTTP protocol) Web objects in response to client requests.
+Steps for HTTP protocol:
+1. Client initiates TCP connection to server at a given IP address, port 80
+2. Server accepts TCP connection from client, creates a socket with this particular client 
+3. HTTP messages exchanged between browser and web server
+4. TCP connection closed at the end of the message / session
 ## Explain how web server works and the HTTP requests and responses
+Most webpages consist of a base `HTML` file, which points you to these several referenced objects.
+- `html` text + 3 JPEG images, then the web page has 4 objects
+- base html file references the other objects in the page with their URLs
+- URL has two components
+	- Hostname of the server
+	- object's path in the server
+Steps:
+1. Enter URL `http://example.org`
+2. DNS resolution `http://example.org` -> `93.184.216.34`
+3. Establish connection `93.184.216.34` with port `80` cuz http
+4. HTTP request once establish GET base HTML file
+5. Server responds with HTML file
+6. Browser needs to render, HTTP request resources such as css, js, images
+### HTTP Request Message
+Method Types:
+- HTTP/1.0: `GET`, `POST,` ,`HEAD`
+- HTTP/1.1: `GET`,`POST`,`HEAD`,`PUT`(upload file to server),`DELETE`
+Response status code:
+- 200 OK
+- 301 MOVED PERMANENTLY
+- 304 NOT MODIFIED
+- 400 BAD REQUEST
+- 404 NOT FOUND
+- 505 HTTP VERSION NOT SUPPORTED
+Status Code Categories:
+1. 1XX: Informational
+2. 2XX: Successful
+3. 3XX: Redirection
+4. 4XX: Bad Request
+5. 5XX: Server Error
+### Connection Types
+#### Persistent (HTTP 1.1)
+Characteristics:
+- Multiple objects can be sent over a single TCP connection between client and server as the server leaves connection open after sending response
+- Requires 1 RTT to establish connection and 1 RTT + file transmission time per reference object
+- Browsers will do pipelining: initiate multiple outstanding HTTP requests within the same TCP connection. No need to wait for previous request to finish, reducing latency and improving the overall efficiency of network communication by utilising a single TCP connection more effectively.
+![[Pasted image 20240815135310.png]]
+With pipelining (ignoring queueing and processing delays): total time taken to load the webpage is 3 RTTs + Base HTML transmission time + 2 * image object transmission time
+#### Non-persistent (HTTP 1.0)
+Characteristics:
+- at most one object sent per TCP connection and then TCP connection closed
+- Downloading multiple objects requires multiple connections
+- Requires 2 RTT per object + file transmission time, causing OS overhead for each TCP connection
+- Often parallelised (increases link utilisation)
+![[Pasted image 20240815135104.png]]
+If there are 2 parallel connections (ignoring queueing and processing delays): total time taken to load webpage: 4 RTT + Base HTML transmission time + 1 image object transmission time
+
+HTTP/1.0 with parallel allow for better throughput but increased RTT. HTTP/1.1 has less throughput but less total RTT.
+
+### HTTPs: Port 443
+Uses TLS (transport layer security) or SSL (secure socket layer) encryption.
 ## Explain how cookies store user-server state and its function
+![[Pasted image 20240815140039.png]]
+Cookies:
+- small piece of data stored on user's computer
+- attached to your browser while browsing. 
+- track information about your browsing habits and enable them to identify you upon subsequent visits to their site
+Also known as user-server states. Components are:
+- Cookie header line in HTTP response message (set by Set-Cookie HTTP header, instructs the browser to store the cookie)
+- Cookie header line in next HTTP request message (automatically attached by browser)
+- Cookie file kept on user's end, managed by browser
+- Backend database at the server side that ulitizes the cookie as index
 ## Analyse how web caching impacts performance
+AKA proxy. Reduces response time for client requests. Reduces traffic on an institution access link.
+- Web cache becomes a "server" for the original requesting client
+- Web cache becomes "client" to origin server
+- Uses Conditional GET, servers do not send requested objects again if cache has up to date version. If cache is not outdated, server response contains no object
+Greater bandwidth to web cache due to proximity. Reducing link utilization -> less queuing delay. Usually on your own computer, managed by browsers or local web caches provided by ISP or institutions
+### Cache vs Cookies
+
+| Cache                                                           | Cookies                                                                           |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| storing website content to make the loading of web pages faster | Store information to track different characteristics related to a particular user |
+| remembers parts of pages like images                            | files created by sites you visit. Saving browsing data                            |
+| browser caches need to be manually cleared                      | might automatically expire                                                        |
+
 ## Explain how wireshark packet sniffer and analyser works and its application
+filter ports:
+```sh
+(tcp.port == 5030) or (tcp.port == 5031) or htcpcp
+```
+Look at the screenshot idk
+## Common Port Numbers
+
+| Service | Detail                          | UDP/TCP port | App using                            |
+| ------- | ------------------------------- | ------------ | ------------------------------------ |
+| DNS     | Domain name - IP resolution     | UDP 53       | -                                    |
+| DNS     | Domain name - IP resolution TCP | TCP 53       | -                                    |
+| HTTP    | Web                             | TCP 80       | www, facetime, imessage, icloud, etc |
+| HTTPS   | Secure Web SSL                  | TCP 443      | www, facetime, imessage, icloud, etc |
+| SMTP    | Simple mail transport           | TCP 25       | Mail (sending mail)                  |
+| TELNET  | Telnet terminal                 | TCP 23       | -                                    |
+| FTP     | File transfer protocol          | TCP 20,21    | -                                    |
+| SSH     | secure shell                    | TCP 22       | xcode server                         |
+| AFP IP  | Apple file protocol/IP          | TCP 445 548  | AppleShare, Apple File Service       |
+## Modern HTTP
+HTTP/2
+- Client-Specified Object Priority: Need not be FIFO
+- Server can proactively push unrequested objects, anticipating future requests
+- Frame division and scheduling: mitigate Head-of-Line blocking.
+HTTP/3
+- Built on top of QUIC instead of TCP, TLP combining TCP, TLS, HTTP/2
+- Elimination of HOL blocking: using UDP, multiplexed streams are independently managed.
+- Improved Connection setup: 0-RTT connection setup 1-RTT handshake. Faster initial page loads
+- Better loss recovery and congestion control: QUIC Magic
+- Enhanced security: TLS 1.3 while HTTP/2 requires separate TLS handshake over TCP
+
+# Labs
+Round-trip time (**RTT**) is the duration, measured in milliseconds, **from** when a browser sends a request **to** when it receives a response from a server.
+## Ping
+```sh
+ping -c [no_of_packets] -s [packet_size=56] -i [seconds_interval]
+```
+output:
+```sh
+PING fe3.edge.pantheon.io (23.185.0.3) 56(84) bytes of data.
+64 bytes from 23.185.0.3: icmp_seq=1 ttl=60 time=11.4 ms
+64 bytes from 23.185.0.3: icmp_seq=2 ttl=60 time=7.13 ms
+64 bytes from 23.185.0.3: icmp_seq=3 ttl=60 time=8.68 ms
+64 bytes from 23.185.0.3: icmp_seq=4 ttl=60 time=6.42 ms
+64 bytes from 23.185.0.3: icmp_seq=5 ttl=60 time=13.7 ms
+64 bytes from 23.185.0.3: icmp_seq=6 ttl=60 time=6.81 ms
+64 bytes from 23.185.0.3: icmp_seq=7 ttl=60 time=13.3 ms
+64 bytes from 23.185.0.3: icmp_seq=8 ttl=60 time=30.0 ms
+64 bytes from 23.185.0.3: icmp_seq=9 ttl=60 time=7.66 ms
+64 bytes from 23.185.0.3: icmp_seq=10 ttl=60 time=13.0 ms
+
+--- fe3.edge.pantheon.io ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 45049ms
+rtt min/avg/max/mdev = 6.420/11.814/29.976/6.636 ms
+```
+Find out domain name from IP addrerss:
+```sh
+whois [ip_address]
+```
+## Traceroute
+```sh
+traceroute [domain_name]
+```
+Output:
+```sh
+traceroute to google.com (74.125.24.139), 30 hops max, 60 byte packets
+ 1  _gateway (10.32.0.1)  2.051 ms  1.986 ms  1.968 ms
+ 2  172.16.1.210 (172.16.1.210)  3.515 ms  3.498 ms  3.483 ms
+ 3  192.168.22.27 (192.168.22.27)  3.687 ms  3.672 ms  5.270 ms
+ 4  202.94.70.1 (202.94.70.1)  5.256 ms 103.24.77.1 (103.24.77.1)  5.242 ms  5.226 ms
+ 5  203.116.5.129 (203.116.5.129)  5.102 ms  5.087 ms *
+ 6  * * *
+ 7  * * *
+ 8  203.116.3.102 (203.116.3.102)  4.368 ms *  7.417 ms
+ 9  203.116.3.102 (203.116.3.102)  14.567 ms 142.250.166.50 (142.250.166.50)  4.827 ms 203.118.4.130 (203.118.4.130)  14.546 ms
+10  142.251.77.156 (142.251.77.156)  9.352 ms 142.250.166.50 (142.250.166.50)  5.000 ms 142.251.52.48 (142.251.52.48)  7.340 ms
+11  209.85.244.156 (209.85.244.156)  4.027 ms 192.178.109.94 (192.178.109.94)  5.894 ms *
+12  142.251.230.145 (142.251.230.145)  6.104 ms 142.251.230.50 (142.251.230.50)  3.884 ms 216.239.40.197 (216.239.40.197)  9.192 ms
+13  216.239.35.168 (216.239.35.168)  5.886 ms 142.251.229.230 (142.251.229.230)  6.914 ms 216.239.35.168 (216.239.35.168)  5.820 ms
+14  172.253.68.251 (172.253.68.251)  6.046 ms 142.251.230.150 (142.251.230.150)  4.652 ms 209.85.252.101 (209.85.252.101)  6.785 ms
+15  172.253.68.253 (172.253.68.253)  5.165 ms 142.251.229.230 (142.251.229.230)  7.624 ms *
+16  66.249.94.149 (66.249.94.149)  5.704 ms *  5.650 ms
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  sf-in-f139.1e100.net (74.125.24.139)  5.616 ms  7.242 ms *
+```
+hops do not affect latency
+The route taken to send a packet from your machine to the remote host machine is **not always the same** with the route taken to send a packet from the remote machine _back_ to you.
+
+## Dig
+`dig` only prints the final result of a recursive search, but you can do the individual steps by `+norecurs`. Query a specific server by using `@specific_server` option
+```sh
+dig @specific_server [domain_name] +trace +norecurs
+```
+`+trace` performs iterative queries and displays the entire trace path to resolve a domain name
+ANSWER SECTION:
+```sh
+;; ANSWER SECTION:
+slashdot.org.		300	IN	A	104.18.5.215
+slashdot.org.		300	IN	A	104.18.4.215
+```
+Server Name -> Expiry (TTL in seconds) -> Class -> Type -> Data
